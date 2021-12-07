@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.caza_fit.ProduitsController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="375.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produits" wrappingWidth="121.02444458007812">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="addproductbtn" alignment="BOTTOM_CENTER" layoutX="52.0" layoutY="235.0" onAction="#addproduct" prefHeight="161.0" prefWidth="179.0" style="-fx-background-color: #074894;" text="Button">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="153.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@add.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Ajouter" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="modifyproductbtn" alignment="BOTTOM_CENTER" layoutX="346.0" layoutY="235.0" onAction="#modifyproduct" prefHeight="161.0" prefWidth="179.0" style="-fx-background-color: #074894;" text="Button">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="153.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@modify.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Modifier" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="showproductbtn" alignment="BOTTOM_CENTER" layoutX="640.0" layoutY="235.0" onAction="#showproduct" prefHeight="161.0" prefWidth="179.0" style="-fx-background-color: #074894;" text="Button">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="153.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Show.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Afficher" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

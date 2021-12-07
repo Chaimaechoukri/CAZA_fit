@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.caza_fit.ClientsController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="395.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clients" wrappingWidth="107.69110107421875">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="addclbtn" alignment="BOTTOM_CENTER" layoutX="57.0" layoutY="114.0" onAction="#addclient" prefHeight="161.0" prefWidth="179.0" style="-fx-background-color: #5271FF;" text="Button">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="153.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Ajouter.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Ajouter" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="modifyclbtn" alignment="BOTTOM_CENTER" layoutX="359.0" layoutY="114.0" onAction="#modifyclient" prefHeight="161.0" prefWidth="179.0" style="-fx-background-color: #5271FF;" text="Button">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="153.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@modifier.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Modifier" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="showclbtn" alignment="BOTTOM_CENTER" layoutX="639.0" layoutY="114.0" onAction="#showclient" prefHeight="161.0" prefWidth="179.0" style="-fx-background-color: #5271FF;" text="Button">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="153.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Afficher.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Afficher" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="identityclbtn" alignment="BOTTOM_CENTER" layoutX="639.0" layoutY="389.0" onAction="#identityclient" prefHeight="161.0" prefWidth="179.0" style="-fx-background-color: #5271FF;" text="Button">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="153.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@identité.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Identité" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="reclamerclbtn" alignment="BOTTOM_CENTER" layoutX="359.0" layoutY="389.0" onAction="#reclamerclient" prefHeight="161.0" prefWidth="179.0" style="-fx-background-color: #5271FF;" text="Button">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="153.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="63.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Réclamer.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Réclamer" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="deleteclbtn" alignment="BOTTOM_CENTER" layoutX="57.0" layoutY="389.0" onAction="#deleteclient" prefHeight="161.0" prefWidth="179.0" style="-fx-background-color: #5271FF;" text="Button">
+               <graphic>
+                  <VBox alignment="CENTER" prefHeight="153.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@supprimer.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Supprimer" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

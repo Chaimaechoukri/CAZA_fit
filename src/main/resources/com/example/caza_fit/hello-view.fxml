@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragExited="#openClients" prefHeight="632.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.caza_fit.HelloController">
+   <left>
+      <AnchorPane fx:id="anchorepane" prefHeight="632.0" prefWidth="152.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="clientbtn" layoutX="25.0" layoutY="82.0" onAction="#openClients" prefHeight="76.0" prefWidth="102.0" text="Clients">
+               <graphic>
+                  <VBox alignment="TOP_CENTER" prefHeight="71.0" prefWidth="78.0">
+                     <children>
+                        <ImageView fitHeight="48.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Clients.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Clients" textFill="#5271ff">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <Line endX="24.333328247070312" endY="510.29290771484375" layoutX="113.0" layoutY="123.0" startX="24.333328247070312" startY="-123.0" stroke="#d9d9d9" />
+            <JFXButton fx:id="dashboardbtn" layoutX="12.0" layoutY="14.0" onAction="#openDashboard" prefHeight="59.0" prefWidth="122.0" text="Home">
+               <graphic>
+                  <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="110.0">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@homee.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Home" textFill="#5271ff">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="employeebtn" layoutX="11.0" layoutY="158.0" onAction="#openEmployee" prefHeight="87.0" prefWidth="123.0" text="Employés">
+               <graphic>
+                  <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="110.0">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Employés.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Employés" textFill="#5271ff">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="ventesbtn" layoutX="9.0" layoutY="397.0" onAction="#openVentes" prefHeight="63.0" prefWidth="128.0" text="Ventes">
+               <graphic>
+                  <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="110.0">
+                     <children>
+                        <ImageView fitHeight="43.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ventes.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Ventes" textFill="#5271ff">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="pannesbtn" layoutX="7.0" layoutY="474.0" onAction="#openPannes" prefHeight="59.0" prefWidth="108.0" text="Pannes">
+               <graphic>
+                  <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="110.0">
+                     <children>
+                        <ImageView fitHeight="49.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pannes.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Pannes" textFill="#5271ff">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="offbtn" layoutX="8.0" layoutY="574.0" onAction="#exitprog" prefHeight="59.0" prefWidth="123.0" text="Exit">
+               <graphic>
+                  <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="110.0">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Quitter.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="trainerbtn" layoutX="11.0" layoutY="238.0" onAction="#openTrainer" prefHeight="87.0" prefWidth="100.0" text="Trainer">
+               <graphic>
+                  <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="110.0">
+                     <children>
+                        <ImageView fitHeight="58.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@trainer.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Trainer" textFill="#5271ff">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="produitsbtn" layoutX="11.0" layoutY="308.0" onAction="#openProduits" prefHeight="76.0" prefWidth="117.0" text="Produits">
+               <graphic>
+                  <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="110.0">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@produits.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Produits" textFill="#5271ff">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
